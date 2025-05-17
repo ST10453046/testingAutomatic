@@ -20,10 +20,10 @@ jobs:
         dotnet-version: '8.0.x' # or the version you’re using
 
     - name: Restore dependencies
-      run: dotnet restore "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln"
+      run: dotnet restore "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln"
 
     - name: Build
-      run: dotnet build "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln" --no-restore --configuration Release
+      run: dotnet build "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln" --no-restore --configuration Release
 
     - name: Run Tests
-      run: dotnet test "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln" --no-build --verbosity normal
+      run: dotnet test "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln" --no-build --verbosity normal
