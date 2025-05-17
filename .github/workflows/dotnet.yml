@@ -1,4 +1,4 @@
-name: .NET Build and Test
+name: Lint, Build and Test .NET App
 
 on:
   push:
@@ -7,9 +7,23 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-test:
+  super-lint:
+    name: Code Quality Check
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Run Super-Linter
+        uses: github/super-linter@v4
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    needs: super-lint  # Requires linting to succeed first
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -17,13 +31,13 @@ jobs:
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.0.x' # or the version you’re using
+        dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln"
+      run: dotnet restore "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln"
 
     - name: Build
-      run: dotnet build "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln" --no-restore --configuration Release
+      run: dotnet build "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln" --no-restore --configuration Release
 
     - name: Run Tests
-      run: dotnet test "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln" --no-build --verbosity normal
+      run: dotnet test "CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1.sln" --no-build --verbosity normal
