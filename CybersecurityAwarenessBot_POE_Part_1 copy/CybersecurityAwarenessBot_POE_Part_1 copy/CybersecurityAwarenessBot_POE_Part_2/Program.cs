@@ -46,8 +46,6 @@ class Program
             ShowMessage("Invalid name. It must include at least one letter.", ConsoleColor.Red);
         }
 
-        
-
         ShowMessage($"\nHello, {name}! Here are some questions you can ask me:", ConsoleColor.DarkBlue);
         qaList.DisplaySampleQuestions();
 
@@ -61,6 +59,7 @@ class Program
                 ShowMessage("Input cannot be empty. Please enter a question or type 'exit'.", ConsoleColor.Red);
                 continue;
             }
+
             if (input.Equals("exit", StringComparison.OrdinalIgnoreCase))
             {
                 ShowMessage("\nGoodbye! Stay safe online.", ConsoleColor.Green);
@@ -72,15 +71,9 @@ class Program
                 qaList.DisplayAllQuestions();
                 continue;
             }
-            
-            //Get answer
+
+            // Get answer
             string answer = qaList.GetAnswer(input);
-
-
-            
-            
-
-           
             TypewriterEffect(answer ?? "I'm not sure about that. Please ask another cybersecurity-related question.");
         }
     }

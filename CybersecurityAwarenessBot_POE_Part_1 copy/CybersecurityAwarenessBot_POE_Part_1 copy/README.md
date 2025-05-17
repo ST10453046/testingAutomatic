@@ -1,7 +1,7 @@
 #Cybersecurity Assistant Console Application
 
 ## Overview
-The **Cybersecurity Assistant** known as CycberWise is a simple, interactive console application built in C# that provides its users with helpful information about cybersecurity topics. It features a friendly command-line interface with ASCII art, color-coded text, and a typewriter effect for displaying answers. Users can ask predefined questions related to cybersecurity and receive informative responses.
+The **Cybersecurity Assistant** known as CycberWise is a simple, interactive console application built-in C# that provides its users with helpful information about cybersecurity topics. It features a friendly command-line interface with ASCII art, color-coded text, and a typewriter effect for displaying answers. Users can ask predefined questions related to cybersecurity and receive informative responses.
 
 ---
 

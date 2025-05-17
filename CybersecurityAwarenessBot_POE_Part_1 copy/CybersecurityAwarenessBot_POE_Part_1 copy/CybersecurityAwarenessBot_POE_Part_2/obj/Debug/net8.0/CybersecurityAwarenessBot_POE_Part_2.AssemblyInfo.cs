@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CybersecurityAwarenessBot_POE_Part_2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+657a410845d31626137aa4b6cfe7299cd73603e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("CybersecurityAwarenessBot_POE_Part_2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CybersecurityAwarenessBot_POE_Part_2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

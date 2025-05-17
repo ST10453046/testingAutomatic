@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RZCHFKyp9hU=",
+  "dgSpecHash": "ooAwnqjifgU=",
   "success": true,
-  "projectFilePath": "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj",
+  "projectFilePath": "/Users/mrsiir/Documents/GitHub/testingAutomatic/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj",
   "expectedPackageFiles": [
     "/Users/mrsiir/.nuget/packages/system.windows.extensions/9.0.4/system.windows.extensions.9.0.4.nupkg.sha512",
     "/Users/mrsiir/.nuget/packages/microsoft.netcore.app.ref/8.0.12/microsoft.netcore.app.ref.8.0.12.nupkg.sha512",
