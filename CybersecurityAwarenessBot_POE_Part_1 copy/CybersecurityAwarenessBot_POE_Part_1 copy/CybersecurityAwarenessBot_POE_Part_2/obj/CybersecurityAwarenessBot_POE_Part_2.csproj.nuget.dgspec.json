@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj": {}
+    "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj": {}
   },
   "projects": {
-    "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj": {
+    "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj",
+        "projectUniqueName": "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj",
         "projectName": "CybersecurityAwarenessBot_POE_Part_2",
-        "projectPath": "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj",
+        "projectPath": "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/CybersecurityAwarenessBot_POE_Part_2.csproj",
         "packagesPath": "/Users/mrsiir/.nuget/packages/",
-        "outputPath": "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/obj/",
+        "outputPath": "/Users/mrsiir/Downloads/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_1 copy/CybersecurityAwarenessBot_POE_Part_2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mrsiir/.nuget/NuGet/NuGet.Config"

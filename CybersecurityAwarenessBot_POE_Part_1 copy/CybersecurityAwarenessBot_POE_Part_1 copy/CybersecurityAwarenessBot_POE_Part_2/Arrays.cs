@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-
-namespace CybersecurityAwarenessBot_POE_Part_1
+﻿
+namespace CybersecurityAwarenessBot_POE_Part_2
 {
     public class Arrays
     {
         private readonly List<(string Question, string Answer)> qaPairs;
         private Dictionary<string, List<string>> randomResponses;
-        private Dictionary<string, string> userMemory;
+
 
         public Arrays()
         {
@@ -82,7 +79,33 @@ namespace CybersecurityAwarenessBot_POE_Part_1
                     "Multi-factor authentication is a security process that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction. It adds an extra layer of security to your accounts.")
 
             };
-        
+
+            randomResponses = new Dictionary<string, List<string>>
+            {
+                {
+                    "phishing tips", new List<string>
+                    {
+                        "Be cautious of emails asking for personal information. Scammers often disguise themselves as trusted organizations.",
+                        "Check the sender's email address carefully. Phishing emails often use addresses that look similar to legitimate ones but have slight differences.",
+                        "Avoid clicking on links in unsolicited emails. Instead, go directly to the organization's website by typing the URL into your browser.",
+                        "Look for signs of urgency or threats in the email. Phishing emails often try to create a sense of urgency to trick you into acting quickly.",
+                        "Be wary of emails with poor grammar or spelling mistakes. These are often signs of a phishing attempt."
+                    }
+                },
+
+                {
+                    "password tips", new List<string>
+                    {
+                        "Use a unique password for each of your accounts to minimize the risk if one password is compromised.",
+                        "Consider using a password manager to generate and store complex passwords securely.",
+                        "Change your passwords regularly, especially for sensitive accounts like email and banking.",
+                        "Avoid using easily guessable information like birthdays or names in your passwords.",
+                        "Use multi-factor authentication (MFA) wherever possible to add an extra layer of security."
+                    }
+                },
+
+
+            };
         }
 
         private readonly Dictionary<string, string> keywordResponses =
@@ -144,6 +167,16 @@ namespace CybersecurityAwarenessBot_POE_Part_1
                 {
                     if (userQuestion.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0)
                         return keywordResponses[keyword];
+                }
+                //Random reponses
+                foreach (var topic in randomResponses.Keys)
+                {
+                    if (userQuestion.IndexOf(topic, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        Random random = new Random();
+                        List<string> responses = randomResponses[topic];
+                        return responses[random.Next(responses.Count)];
+                    }
                 }
 
             }
